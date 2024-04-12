@@ -1,0 +1,31 @@
+{
+  "systemNotSupported": "[red]Ваша ОС не поддерживается.",
+  "errorReceivingLangConf": "[red]Невозможно получить перевод с сервера, проверьте свое интернет соединение.",
+  "errorReceivingAppsConf": "[red]Невозможно получить данные о приложениях с сервера, проверьте свое интернет соединение.",
+  "pressEnterToContinue": "Нажмите 'enter' для продолжения...",
+  "keyboardInterrupt": "[green]\n\nПроцесс завершен пользователем.",
+  "exceptionCaught": "[red]\n\nПоймано исключение: [blue]%s",
+  "reportItToGithubIssues": "[red]Пожалуйста, оставьте issue с этим исключением на github, https://github.com/nomfodm/ia/issues",
+
+  "welcome": "[green]Добро пожаловать в Installation Assistant, [red]v%s\n[white]Эта программа установит вам приложение по выбору, а также сконфигурирует его, также по вашему выбору.",
+  "chooseAppYouWantToInstall": "Выберите приложение, которые вы хотите установить",
+
+  "noConfigurationNeeded": "Конфигурация не требуется",
+  "chooseConfigForApp": "Сейчас, я предлагаю выбрать нужную вам конфигурацию.",
+
+  "youChosenAConfiguration": "[green]Хорошо, вы выбрали конфигурацию [blue]%s[green].",
+  "youDontNeedAConfiguration": "[green]Хорошо, без конфигурации, тогда я просто установлю вам [blue]%s[green].",
+
+  "downloadingSetupFile": "[green]\nЗагружаю файл установщика...",
+  "noSetupFile": "[green]\nДля этого приложения не требуется файл установщика",
+  "installing": "[green]\nУстановка...",
+  "installedSuccessfully": "[blue]\n%s [green]установлен успешно!",
+
+  "nowIWillApplyConfiguration": "[green]\nА сейчас, я применю конфигурацию [blue]%s [green]для [bold blue]%s[green].",
+  "errorOccurredWhiteConfiguring": "[red]\nПроизошла ошибка во время конфигурирования [blue]%s [green]для [bold blue]%s[green].",
+  "configuringCompleted": "[green]\nКонфигурация применена.",
+
+  "installationCompleted": "[green]\nУстановка завершена.",
+
+  "thanksForUsingIA": "[bold green]\nСпасибо за использование Installation Assistant!"
+}
