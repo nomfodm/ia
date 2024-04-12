@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "fullAppName": "Visual Studio Code",
+      "shortAppName": "VS Code",
+      "setup": {
+        "windows": {
+          "setupFilename": "vscodesetup.exe",
+          "setupUrl": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user",
+          "setupCommand": ["ia\\vscodesetup.exe", "/SILENT", "/CURRENTUSER"]
+        },
+        "linux": {
+          "setupFilename": "vscodesetup.deb",
+          "setupUrl": "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64",
+          "setupCommand": ["sudo", "dpkg", "-i", "ia/vscodesetup.deb"]
+        }
+      },
+      "configurations": [
+        {
+          "fullConfigName": "C/C++ Competitive Programming",
+          "shortConfigName": "C/C++ Competitive",
+          "configureScriptUrl": "https://raw.githubusercontent.com/nomfodm/ia/master/configurations/vscode/cppcompvscode.py",
+          "configureScriptFilename": "cppcompvscode.py"
+        }
+      ]
+    }
+  ]
+}
