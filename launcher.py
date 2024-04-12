@@ -20,6 +20,8 @@ def main() -> None:
     print("\n\nStarting...\n")
     subprocess.call([sys.executable, "main.py"])
 
+    cleanUp()
+
 
 if __name__ == '__main__':
     try:
