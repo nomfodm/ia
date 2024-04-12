@@ -73,6 +73,7 @@ class Helper:
     @staticmethod
     def cleanUp() -> None:
         shutil.rmtree("ia", ignore_errors=True)
+        shutil.rmtree("__pycache__", ignore_errors=True)
 
     @staticmethod
     def clearConsole() -> None:
