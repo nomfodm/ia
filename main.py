@@ -52,7 +52,9 @@ CONFIG = {
         "installationCompleted": "[green]\nInstallation completed.",
 
         "thanksForUsingIA": "[bold green]\nThanks for using Installation Assistant!"
-    }
+    },
+    "infoJsonUrl": "https://raw.githubusercontent.com/nomfodm/ia/master/info.json",
+    "languageJsonUrlTemplate": "https://raw.githubusercontent.com/nomfodm/ia/master/lang/%s.json"
 }
 
 DEV = False
@@ -166,7 +168,7 @@ class Request:
             return
 
         try:
-            with urllib.request.urlopen(f"https://infinitymc.ru/ih/{CONFIG['language']}.json") as req:
+            with urllib.request.urlopen(CONFIG["languageJsonUrlTemplate"] % CONFIG["language"]) as req:
                 CONFIG["messages"] = json.loads(req.read().decode("utf-8"))
         except urllib.error.HTTPError:
             Helper.die(CONFIG['messages']["errorReceivingLangConf"])
