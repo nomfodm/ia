@@ -12,7 +12,7 @@ def cleanUp() -> None:
 def main() -> None:
     print("Installing pypi dependencies...")
     subprocess.call(
-        [sys.executable, "-m", "pip", "install", "rich", "py7zr" if sys.platform.startswith("win32") else ""])
+        [sys.executable, "-m", "pip", "install", "rich", "py7zr" if sys.platform.startswith("win32") else "rich"])
 
     print("\n\nDownloading main.py...")
     urllib.request.urlretrieve("https://raw.githubusercontent.com/nomfodm/ia/master/main.py", "main.py")
