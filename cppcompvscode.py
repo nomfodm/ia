@@ -81,7 +81,8 @@ def main():
 
     extensions = config["extensions"]
     for extension in extensions:
-        subprocess.call([config["codeCommand"][args[0]], "--install-extension", extension])
+        subprocess.call([config["codeCommand"][args[0]], "--install-extension", extension],
+                        shell=(True if sys.platform.startswith("win32") else False))
 
     print("\nSetting settings.json...")
     if not os.path.isfile(config["settingsJsonLocation"][args[0]]):

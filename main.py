@@ -138,7 +138,8 @@ class Helper:
 
         status = subprocess.call([sys.executable, scriptFilename, Helper.getSystemName()])
         if status != 0:
-            print(CONFIG["messages"]["errorOccurredWhiteConfiguring"])
+            print(CONFIG["messages"]["errorOccurredWhiteConfiguring"] % (
+                configuration["shortConfigName"], app["shortAppName"]))
             print(CONFIG['messages']["reportItToGithubIssues"])
 
             Helper.cleanUp()
