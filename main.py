@@ -92,7 +92,7 @@ class Helper:
         exit(0)
 
     @staticmethod
-    def createPrintableAppListStringAndChooseList() -> typing.Tuple[str, list[str]]:
+    def createPrintableAppListStringAndChooseList() -> typing.Tuple[str, typing.List[str]]:
         appListString = ""
         chooseList = []
         for i, app in enumerate(CONFIG["apps"]):
@@ -102,7 +102,7 @@ class Helper:
         return appListString, chooseList
 
     @staticmethod
-    def createPrintableConfigurationsListAndChooseList(app: typing.Dict) -> typing.Tuple[str, list[str]]:
+    def createPrintableConfigurationsListAndChooseList(app: typing.Dict) -> typing.Tuple[str, typing.List[str]]:
         configurationsListString = f"\t0. {CONFIG['messages']['noConfigurationNeeded']}\n"
         chooseList = ['0']
         for i, configuration in enumerate(app["configurations"]):
