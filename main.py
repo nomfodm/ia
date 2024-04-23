@@ -156,7 +156,7 @@ class Request:
     def getAppsConfig() -> None:
 
         try:
-            with urllib.request.urlopen("https://infinitymc.ru/ih/info.json") as req:
+            with urllib.request.urlopen(CONFIG["infoJsonUrl"]) as req:
                 CONFIG["apps"] = json.loads(req.read().decode("utf-8"))["apps"]
         except urllib.error.HTTPError:
             Helper.die(CONFIG['messages']["errorReceivingAppsConf"])
